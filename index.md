@@ -68,6 +68,24 @@ In layman terms, it **removes a file** from the present directory.
 Have a nice day.
  
 ---
+### `apt-get` : Package manager: install, delete, update, upgrade directly from **command line** . Most copied command in the entire OS
+
+In layman terms, it **removes a file** from the present directory.
+
+À la carte : 
+
+- `apt-get update` : Updates the list of packages you can install from various sources.
+
+- `apt-get install package_name` : Downloads and install that package from the internet. Usually follows the above command.
+
+- `apt-get purge package_name` : compleatly removes the package. **hidden** files. 
+
+- `apt-get install -f package_name` : Download and install, and correct broken dependecies. Like if package A is dependent on package B to run, but package B is broken it may try to reinstall it.
+
+- `apt-get autoremove` : removes unused packages automatically.
+
+> All of these commands are generally preceded by sudo (super user do) which in noob speak translates to administrater privileges. The GUI app to do this effectively can be downloaded using `apt-get install synaptic` .
+---
 Copyright [sudoankit.](https://github.com/sudoankit)
 Licensed under the [MIT License.](https://raw.githubusercontent.com/sudoankit/UNIXRoutine/master/LICENSE)
 
